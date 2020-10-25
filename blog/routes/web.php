@@ -13,10 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/',function(){
+    return view('GreensoftHome');
 });
 
-Route::get('/greensoft',function(){
-    return "Greensoft Dhaka";
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/greensoft',function(){
+//     return "Greensoft Dhaka";
+// });

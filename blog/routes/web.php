@@ -20,7 +20,7 @@ Route::get('/about','App\Http\Controllers\SiteController@About');
 Route::get('/contact','App\Http\Controllers\SiteController@Contact');
 
 Route::get('/',function(){
-    return view('welcome');
+    return view('GreensoftHome');
 });
 
 // Route::get('/', function () {

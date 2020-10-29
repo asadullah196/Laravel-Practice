@@ -1,1 +1,84 @@
-Test Changes
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>VUE JS Practice Template</title>
+	<style type="text/css">
+		ul{
+			list-style:none;
+		}
+		li{
+			display:inline;
+		}
+		.active{
+			background:#0B78A0;
+			color:#ffffff;
+		}
+	</style>
+</head>
+<body>
+	<div id="root">
+		<!-- <h1>Please Update Your Name</h1> -->
+		<!-- <input type="text" v-model="name"> -->
+		
+		<ul>
+		
+		
+			<!-- <li> -->
+				<!-- <a href="">{{ link1.text }}</a> -->
+			<!-- </li> -->
+			
+			<li>
+				<a :class="{'active': activeLink == 'link1'}" :href="link1.url" title="link1.title">{{ link1.text }}</a>
+			</li>
+			<li>
+				<a :class="{'active': activeLink == 'link2'}" :href="link1.ur2" title="link2.title">{{link2.text}}</a>
+			</li>
+		</ul>
+		<br/><br/><br/>
+		<p v-html="html"></p>
+	
+	<!-- <h1> Your Name is	{{name}}</h1> -->
+	</div>
+
+	
+	<script type="text/javascript" src="vue.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#root",
+			data: {
+				link1: {
+					text: "Greensoft", title: "Go to greensoft website", url: "https://greensoftdhaka.com"
+				},
+				
+				link2: {
+					text: "Tech Alert", title: "Go to Tech Alert Blog website", url: "https://techalertbangla.com"
+				},
+				
+				activeLink: "link1",
+				html: '<a href="galibnotes.com">About Developer</a>'
+				
+				
+				<!-- className: "active" -->
+				<!-- activeLink: "link1" -->
+				<!-- html: '<a href="galibnotes.com">About Developer</a>' -->
+			<!-- data:{ -->
+			<!-- name: "Galib" -->
+			//message: "This is for vue practice"
+			}
+			
+		});
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

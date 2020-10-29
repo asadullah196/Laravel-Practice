@@ -19,10 +19,16 @@ Route::get('/about','App\Http\Controllers\SiteController@About');
 
 Route::get('/contact','App\Http\Controllers\SiteController@Contact');
 
-Route::get('/',function(){
+Route::get('/cs',function(){
     return view('GreensoftHome');
 });
 
+
+// Commings SOON Public View
+
+Route::get('/cs',function(){
+    return view('CommingSoon/comming_soon');
+});
 // Route::get('/', function () {
 //     return view('welcome');
 // });

@@ -36,3 +36,9 @@ Route::get('/cs',function(){
 // Route::get('/greensoft',function(){
 //     return "Greensoft Dhaka";
 // });
+
+
+// Registration form page
+Route::get('/reg',function(){
+    return view('CommingSoon/registration');
+});

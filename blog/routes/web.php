@@ -44,5 +44,5 @@ Route::get('/cs',function(){
 //     return view('CommingSoon/registration');
 // });
 
-Route::get("/reg",[StudentController::class,'showLoginForm']);
+Route::get("/reg",[StudentController::class,'showLoginForm'])->name('registration');
 Route::post("/reg",[StudentController::class,'processLoginForm']);

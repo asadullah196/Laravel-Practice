@@ -10,7 +10,7 @@
         <input type="text" id="fname" name="name" placeholder="John"><br><br>
 
         <label for="Password">Password:</label>
-        <input type="password" name="assword" placeholder="123"><br><br><br>
+        <input type="password" name="password" placeholder="123"><br><br><br>
 
         <input type="submit" value="Submit">
     </form>

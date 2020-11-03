@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class SiteController extends Controller
 {
     //Site Controller Pratice
-    function Home(){
+    public function Home(){
             // return "I am from Site  Controller Home Method";
             return view('GreensoftHome');
     }

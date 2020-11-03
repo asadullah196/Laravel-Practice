@@ -4,7 +4,8 @@
 
     <h2>HTML Forms</h2>
 
-    <form action="/action_page.php">
+    <form method="POST" action="{{route('registration')}}">
+    @csrf
         <label for="fname">Name:</label>
         <input type="text" id="fname" name="name" placeholder="John"><br><br>
 

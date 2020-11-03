@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,9 @@ Route::get('/cs',function(){
 
 
 // Registration form page
-Route::get('/reg',function(){
-    return view('CommingSoon/registration');
-});
+// Route::get('/reg',function(){
+//     return view('CommingSoon/registration');
+// });
+
+Route::get("/reg",[StudentController::class,'showLoginForm']);
+Route::post("/reg",[StudentController::class,'processLoginForm']);

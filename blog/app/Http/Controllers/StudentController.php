@@ -25,7 +25,15 @@ class StudentController extends Controller
     }
 
     public function processLoginForm(Request $request){
-        dd('ok bhai!');
+        //dd('ok bhai!');
+
+        $student = new Student;
+        $student->name = $request->name;
+        $student->password = $request->password;
+
+        $student->save();
+
+        return redirect()->back();
     }
     /**
      * Show the form for creating a new resource.

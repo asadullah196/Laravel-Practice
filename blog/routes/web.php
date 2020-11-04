@@ -46,3 +46,6 @@ Route::get('/cs',function(){
 
 Route::get("/reg",[StudentController::class,'showLoginForm'])->name('registration');
 Route::post("/reg",[StudentController::class,'processLoginForm']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
